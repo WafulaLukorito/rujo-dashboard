@@ -31,7 +31,7 @@ export default function LoginPage() {
             <p className="text-gray-400 text-sm mt-1">Sign in to your publisher dashboard</p>
           </div>
 
-          <form onSubmit={handleLogin} className="space-y-5 mb-6">
+          <form onSubmit={handleLogin} noValidate className="space-y-5 mb-6">
             <div>
               <label className="block text-sm font-medium text-gray-300 mb-2">Email Address</label>
               <div className="relative">
@@ -42,7 +42,6 @@ export default function LoginPage() {
                   type="email" 
                   placeholder="name@rujomusic.com"
                   className="w-full bg-[#111827]/60 border border-[#374151]/60 rounded-xl pl-11 pr-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 transition-all hover:bg-[#111827]/80"
-                  required
                 />
               </div>
             </div>
@@ -60,7 +59,6 @@ export default function LoginPage() {
                   type="password" 
                   placeholder="••••••••"
                   className="w-full bg-[#111827]/60 border border-[#374151]/60 rounded-xl pl-11 pr-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 transition-all hover:bg-[#111827]/80"
-                  required
                 />
               </div>
             </div>
