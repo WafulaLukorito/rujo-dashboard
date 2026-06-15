@@ -1,0 +1,64 @@
+{
+  "financials": {
+    "availableBalance": 45280.50,
+    "totalRevenueYTD": 128450.75,
+    "lastPayment": {
+      "amount": 12500.00,
+      "date": "2026-06-01"
+    }
+  },
+  "activity": [
+    {
+      "id": "1",
+      "type": "royalty",
+      "title": "Q1 2026 Streaming Royalties",
+      "description": "Received streaming royalties from Spotify and Apple Music.",
+      "amount": 4200.50,
+      "date": "2026-06-14T10:30:00Z"
+    },
+    {
+      "id": "2",
+      "type": "sync",
+      "title": "Sync Placement: 'Midnight Drive'",
+      "description": "Placed in Netflix series 'Neon Nights' Season 2.",
+      "amount": 15000.00,
+      "date": "2026-06-10T14:15:00Z"
+    },
+    {
+      "id": "3",
+      "type": "catalog",
+      "title": "New Song Registered",
+      "description": "Successfully registered 'Summer Breeze' with PRO.",
+      "date": "2026-06-05T09:00:00Z"
+    }
+  ],
+  "catalog": [
+    {
+      "id": "c1",
+      "title": "Midnight Drive",
+      "artist": "The Synthetics",
+      "releaseDate": "2025-04-12",
+      "isrc": "US-S1Z-25-00001",
+      "streams": 15000000,
+      "revenue": 52000.00
+    },
+    {
+      "id": "c2",
+      "title": "Summer Breeze",
+      "artist": "The Synthetics",
+      "releaseDate": "2026-05-20",
+      "isrc": "US-S1Z-26-00002",
+      "streams": 250000,
+      "revenue": 850.00
+    },
+    {
+      "id": "c3",
+      "title": "Neon Lights",
+      "artist": "The Synthetics",
+      "releaseDate": "2024-11-05",
+      "isrc": "US-S1Z-24-00003",
+      "streams": 32000000,
+      "revenue": 115000.00
+    }
+  ]
+}
