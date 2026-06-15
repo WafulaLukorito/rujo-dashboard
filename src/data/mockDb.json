@@ -4,12 +4,12 @@
       "id": "1",
       "name": "Bantu Collective",
       "financials": {
-        "availableBalance": 9970627,
-        "totalRevenueYTD": 21038316,
-        "spotifyRevenue": 8415326,
-        "youtubeRevenue": 6311494,
+        "availableBalance": 1571955,
+        "totalRevenueYTD": 13134053,
+        "spotifyRevenue": 5253621,
+        "youtubeRevenue": 3940215,
         "lastPayment": {
-          "amount": 1664068,
+          "amount": 1801702,
           "date": "2026-06-01"
         }
       },
@@ -21,7 +21,7 @@
           "severity": "success",
           "title": "Boomplay Mechanical Royalties",
           "description": "Processed Q1 mechanical royalties for Bantu Collective from Boomplay.",
-          "amount": 321993,
+          "amount": 711859,
           "date": "2026-06-14T10:30:00Z",
           "actionable": false,
           "metadata": {
@@ -49,7 +49,7 @@
           "severity": "warning",
           "title": "Action Required: License Approval",
           "description": "Final terms for a sync placement need admin sign-off.",
-          "amount": 2991363,
+          "amount": 2823577,
           "date": "2026-06-11T16:20:00Z",
           "actionable": true,
           "metadata": {
@@ -60,22 +60,122 @@
       "catalog": [
         {
           "id": "1-c1",
-          "title": "Bantu Collective Hit 1",
+          "title": "Sema Nami",
           "artist": "Bantu Collective",
-          "releaseDate": "2025-04-12",
-          "isrc": "KE-A1Z-25-1001",
-          "streams": 11821161,
-          "revenue": 3963646,
-          "split": 50
+          "releaseDate": "2026-05-26",
+          "isrc": "KE-A1Z-26-1001",
+          "streams": 3511741,
+          "revenue": 1580283,
+          "split": 100
         },
         {
           "id": "1-c2",
-          "title": "Bantu Collective Hit 2",
+          "title": "Kesho Kutwa",
           "artist": "Bantu Collective",
-          "releaseDate": "2026-05-20",
-          "isrc": "KE-A1Z-26-1002",
-          "streams": 764836,
-          "revenue": 159413,
+          "releaseDate": "2024-03-17",
+          "isrc": "KE-A1Z-24-1002",
+          "streams": 6640635,
+          "revenue": 3187504,
+          "split": 100
+        },
+        {
+          "id": "1-c3",
+          "title": "Machozi ya Furaha",
+          "artist": "Bantu Collective",
+          "releaseDate": "2022-07-09",
+          "isrc": "KE-A1Z-22-1003",
+          "streams": 14242031,
+          "revenue": 5696812,
+          "split": 75
+        },
+        {
+          "id": "1-c4",
+          "title": "Upendo wa Dhati",
+          "artist": "Bantu Collective",
+          "releaseDate": "2024-06-26",
+          "isrc": "KE-A1Z-24-1004",
+          "streams": 517782,
+          "revenue": 186401,
+          "split": 50
+        },
+        {
+          "id": "1-c5",
+          "title": "Mwangaza",
+          "artist": "Bantu Collective",
+          "releaseDate": "2024-03-18",
+          "isrc": "KE-A1Z-24-1005",
+          "streams": 12841821,
+          "revenue": 5778819,
+          "split": 50
+        },
+        {
+          "id": "1-c6",
+          "title": "Safari Ndefu",
+          "artist": "Bantu Collective",
+          "releaseDate": "2022-11-23",
+          "isrc": "KE-A1Z-22-1006",
+          "streams": 5939012,
+          "revenue": 2138044,
+          "split": 100
+        },
+        {
+          "id": "1-c7",
+          "title": "Nyumbani",
+          "artist": "Bantu Collective",
+          "releaseDate": "2026-06-08",
+          "isrc": "KE-A1Z-26-1007",
+          "streams": 5249713,
+          "revenue": 3307319,
+          "split": 100
+        },
+        {
+          "id": "1-c8",
+          "title": "Tujengane",
+          "artist": "Bantu Collective",
+          "releaseDate": "2024-08-21",
+          "isrc": "KE-A1Z-24-1008",
+          "streams": 6322987,
+          "revenue": 2402735,
+          "split": 100
+        },
+        {
+          "id": "1-c9",
+          "title": "Dunia Duara",
+          "artist": "Bantu Collective",
+          "releaseDate": "2023-08-22",
+          "isrc": "KE-A1Z-23-1009",
+          "streams": 12931307,
+          "revenue": 5172522,
+          "split": 100
+        },
+        {
+          "id": "1-c10",
+          "title": "Upepo wa Pwani",
+          "artist": "Bantu Collective",
+          "releaseDate": "2022-09-11",
+          "isrc": "KE-A1Z-22-1010",
+          "streams": 7572060,
+          "revenue": 3028824,
+          "split": 50
+        },
+        {
+          "id": "1-c11",
+          "title": "Sherehe",
+          "artist": "Bantu Collective",
+          "releaseDate": "2025-04-16",
+          "isrc": "KE-A1Z-25-1011",
+          "streams": 6419348,
+          "revenue": 2375158,
+          "split": 50
+        },
+        {
+          "id": "1-c12",
+          "title": "Wimbi la Bahari",
+          "artist": "Bantu Collective",
+          "releaseDate": "2024-02-14",
+          "isrc": "KE-A1Z-24-1012",
+          "streams": 2655201,
+          "revenue": 1593120,
           "split": 100
         }
       ],
@@ -101,12 +201,12 @@
       "id": "2",
       "name": "Nyota Groove",
       "financials": {
-        "availableBalance": 7179928,
-        "totalRevenueYTD": 15149873,
-        "spotifyRevenue": 6059949,
-        "youtubeRevenue": 4544961,
+        "availableBalance": 6203892,
+        "totalRevenueYTD": 18372393,
+        "spotifyRevenue": 7348957,
+        "youtubeRevenue": 5511717,
         "lastPayment": {
-          "amount": 2432834,
+          "amount": 699270,
           "date": "2026-06-01"
         }
       },
@@ -118,7 +218,7 @@
           "severity": "success",
           "title": "Boomplay Mechanical Royalties",
           "description": "Processed Q1 mechanical royalties for Nyota Groove from Boomplay.",
-          "amount": 691531,
+          "amount": 563037,
           "date": "2026-06-14T10:30:00Z",
           "actionable": false,
           "metadata": {
@@ -146,7 +246,7 @@
           "severity": "warning",
           "title": "Action Required: License Approval",
           "description": "Final terms for a sync placement need admin sign-off.",
-          "amount": 1261979,
+          "amount": 1609456,
           "date": "2026-06-11T16:20:00Z",
           "actionable": true,
           "metadata": {
@@ -157,23 +257,123 @@
       "catalog": [
         {
           "id": "2-c1",
-          "title": "Nyota Groove Hit 1",
+          "title": "Muziki Tamu",
           "artist": "Nyota Groove",
-          "releaseDate": "2025-04-12",
-          "isrc": "KE-A1Z-25-2001",
-          "streams": 17853270,
-          "revenue": 6416506,
-          "split": 50
+          "releaseDate": "2026-03-07",
+          "isrc": "KE-A1Z-26-2001",
+          "streams": 3184003,
+          "revenue": 2005921,
+          "split": 100
         },
         {
           "id": "2-c2",
-          "title": "Nyota Groove Hit 2",
+          "title": "Nipe Nafasi",
           "artist": "Nyota Groove",
-          "releaseDate": "2026-05-20",
-          "isrc": "KE-A1Z-26-2002",
-          "streams": 259731,
-          "revenue": 226942,
+          "releaseDate": "2025-08-18",
+          "isrc": "KE-A1Z-25-2002",
+          "streams": 9686683,
+          "revenue": 6199477,
           "split": 100
+        },
+        {
+          "id": "2-c3",
+          "title": "Ladha ya Mapenzi",
+          "artist": "Nyota Groove",
+          "releaseDate": "2024-01-22",
+          "isrc": "KE-A1Z-24-2003",
+          "streams": 5852882,
+          "revenue": 2516739,
+          "split": 100
+        },
+        {
+          "id": "2-c4",
+          "title": "Chakacha",
+          "artist": "Nyota Groove",
+          "releaseDate": "2025-01-10",
+          "isrc": "KE-A1Z-25-2004",
+          "streams": 12313813,
+          "revenue": 6895735,
+          "split": 75
+        },
+        {
+          "id": "2-c5",
+          "title": "Jasho na Damu",
+          "artist": "Nyota Groove",
+          "releaseDate": "2023-08-14",
+          "isrc": "KE-A1Z-23-2005",
+          "streams": 7212302,
+          "revenue": 4038889,
+          "split": 75
+        },
+        {
+          "id": "2-c6",
+          "title": "Mapambano",
+          "artist": "Nyota Groove",
+          "releaseDate": "2025-09-19",
+          "isrc": "KE-A1Z-25-2006",
+          "streams": 8134757,
+          "revenue": 3986030,
+          "split": 100
+        },
+        {
+          "id": "2-c7",
+          "title": "Kipepeo Rangi",
+          "artist": "Nyota Groove",
+          "releaseDate": "2023-03-08",
+          "isrc": "KE-A1Z-23-2007",
+          "streams": 5551108,
+          "revenue": 2164932,
+          "split": 50
+        },
+        {
+          "id": "2-c8",
+          "title": "Ngoma ya Usiku",
+          "artist": "Nyota Groove",
+          "releaseDate": "2024-01-22",
+          "isrc": "KE-A1Z-24-2008",
+          "streams": 9741758,
+          "revenue": 5845054,
+          "split": 50
+        },
+        {
+          "id": "2-c9",
+          "title": "Tabasamu Yako",
+          "artist": "Nyota Groove",
+          "releaseDate": "2023-04-07",
+          "isrc": "KE-A1Z-23-2009",
+          "streams": 896787,
+          "revenue": 322843,
+          "split": 100
+        },
+        {
+          "id": "2-c10",
+          "title": "Cheza Kidogo",
+          "artist": "Nyota Groove",
+          "releaseDate": "2024-06-04",
+          "isrc": "KE-A1Z-24-2010",
+          "streams": 308946,
+          "revenue": 188457,
+          "split": 50
+        },
+        {
+          "id": "2-c11",
+          "title": "Asali na Nyuki",
+          "artist": "Nyota Groove",
+          "releaseDate": "2025-01-05",
+          "isrc": "KE-A1Z-25-2011",
+          "streams": 10169601,
+          "revenue": 3762752,
+          "split": 100
+        },
+        {
+          "id": "2-c12",
+          "title": "Nyota ya Alfajiri",
+          "artist": "Nyota Groove",
+          "releaseDate": "2022-08-28",
+          "isrc": "KE-A1Z-22-2012",
+          "streams": 9852102,
+          "revenue": 4531966,
+          "split": 75
         }
       ],
       "settings": {
@@ -198,12 +398,12 @@
       "id": "3",
       "name": "Dhahabu Vibes",
       "financials": {
-        "availableBalance": 9716666,
-        "totalRevenueYTD": 25306539,
-        "spotifyRevenue": 10122615,
-        "youtubeRevenue": 7591961,
+        "availableBalance": 4371671,
+        "totalRevenueYTD": 20314104,
+        "spotifyRevenue": 8125641,
+        "youtubeRevenue": 6094231,
         "lastPayment": {
-          "amount": 2408221,
+          "amount": 2140761,
           "date": "2026-06-01"
         }
       },
@@ -215,7 +415,7 @@
           "severity": "success",
           "title": "Boomplay Mechanical Royalties",
           "description": "Processed Q1 mechanical royalties for Dhahabu Vibes from Boomplay.",
-          "amount": 724112,
+          "amount": 369514,
           "date": "2026-06-14T10:30:00Z",
           "actionable": false,
           "metadata": {
@@ -243,7 +443,7 @@
           "severity": "warning",
           "title": "Action Required: License Approval",
           "description": "Final terms for a sync placement need admin sign-off.",
-          "amount": 2358880,
+          "amount": 2514021,
           "date": "2026-06-11T16:20:00Z",
           "actionable": true,
           "metadata": {
@@ -254,22 +454,122 @@
       "catalog": [
         {
           "id": "3-c1",
-          "title": "Dhahabu Vibes Hit 1",
+          "title": "Dhahabu",
           "artist": "Dhahabu Vibes",
-          "releaseDate": "2025-04-12",
+          "releaseDate": "2025-04-15",
           "isrc": "KE-A1Z-25-3001",
-          "streams": 6159934,
-          "revenue": 3424528,
-          "split": 50
+          "streams": 5040098,
+          "revenue": 2116841,
+          "split": 75
         },
         {
           "id": "3-c2",
-          "title": "Dhahabu Vibes Hit 2",
+          "title": "Pesa Mkononi",
           "artist": "Dhahabu Vibes",
-          "releaseDate": "2026-05-20",
-          "isrc": "KE-A1Z-26-3002",
-          "streams": 187999,
-          "revenue": 87330,
+          "releaseDate": "2024-09-05",
+          "isrc": "KE-A1Z-24-3002",
+          "streams": 11847407,
+          "revenue": 6634547,
+          "split": 100
+        },
+        {
+          "id": "3-c3",
+          "title": "Kazi na Bati",
+          "artist": "Dhahabu Vibes",
+          "releaseDate": "2024-01-27",
+          "isrc": "KE-A1Z-24-3003",
+          "streams": 13984502,
+          "revenue": 6992251,
+          "split": 50
+        },
+        {
+          "id": "3-c4",
+          "title": "Vibe la Mtaa",
+          "artist": "Dhahabu Vibes",
+          "releaseDate": "2022-04-16",
+          "isrc": "KE-A1Z-22-3004",
+          "streams": 4316065,
+          "revenue": 2503317,
+          "split": 100
+        },
+        {
+          "id": "3-c5",
+          "title": "Sura Yako",
+          "artist": "Dhahabu Vibes",
+          "releaseDate": "2026-11-22",
+          "isrc": "KE-A1Z-26-3005",
+          "streams": 4519147,
+          "revenue": 1943233,
+          "split": 75
+        },
+        {
+          "id": "3-c6",
+          "title": "Mvua ya Baraka",
+          "artist": "Dhahabu Vibes",
+          "releaseDate": "2026-12-23",
+          "isrc": "KE-A1Z-26-3006",
+          "streams": 3420954,
+          "revenue": 1231543,
+          "split": 75
+        },
+        {
+          "id": "3-c7",
+          "title": "Nishike Mkono",
+          "artist": "Dhahabu Vibes",
+          "releaseDate": "2023-12-03",
+          "isrc": "KE-A1Z-23-3007",
+          "streams": 14732994,
+          "revenue": 7071837,
+          "split": 50
+        },
+        {
+          "id": "3-c8",
+          "title": "Kiu ya Maji",
+          "artist": "Dhahabu Vibes",
+          "releaseDate": "2024-12-11",
+          "isrc": "KE-A1Z-24-3008",
+          "streams": 7624056,
+          "revenue": 3049622,
+          "split": 100
+        },
+        {
+          "id": "3-c9",
+          "title": "Ukweli Mtupu",
+          "artist": "Dhahabu Vibes",
+          "releaseDate": "2026-06-22",
+          "isrc": "KE-A1Z-26-3009",
+          "streams": 8646536,
+          "revenue": 4582664,
+          "split": 50
+        },
+        {
+          "id": "3-c10",
+          "title": "Moto na Maji",
+          "artist": "Dhahabu Vibes",
+          "releaseDate": "2023-07-01",
+          "isrc": "KE-A1Z-23-3010",
+          "streams": 11402507,
+          "revenue": 6271378,
+          "split": 50
+        },
+        {
+          "id": "3-c11",
+          "title": "Maisha Marefu",
+          "artist": "Dhahabu Vibes",
+          "releaseDate": "2022-09-17",
+          "isrc": "KE-A1Z-22-3011",
+          "streams": 12845696,
+          "revenue": 7707417,
+          "split": 100
+        },
+        {
+          "id": "3-c12",
+          "title": "Zamani Sana",
+          "artist": "Dhahabu Vibes",
+          "releaseDate": "2023-02-13",
+          "isrc": "KE-A1Z-23-3012",
+          "streams": 7983314,
+          "revenue": 4231156,
           "split": 100
         }
       ],
@@ -295,12 +595,12 @@
       "id": "4",
       "name": "Neema Zuhura",
       "financials": {
-        "availableBalance": 5056554,
-        "totalRevenueYTD": 13798170,
-        "spotifyRevenue": 5519268,
-        "youtubeRevenue": 4139451,
+        "availableBalance": 5555312,
+        "totalRevenueYTD": 25116923,
+        "spotifyRevenue": 10046769,
+        "youtubeRevenue": 7535076,
         "lastPayment": {
-          "amount": 1984669,
+          "amount": 1015140,
           "date": "2026-06-01"
         }
       },
@@ -312,7 +612,7 @@
           "severity": "success",
           "title": "Boomplay Mechanical Royalties",
           "description": "Processed Q1 mechanical royalties for Neema Zuhura from Boomplay.",
-          "amount": 528973,
+          "amount": 689329,
           "date": "2026-06-14T10:30:00Z",
           "actionable": false,
           "metadata": {
@@ -340,7 +640,7 @@
           "severity": "warning",
           "title": "Action Required: License Approval",
           "description": "Final terms for a sync placement need admin sign-off.",
-          "amount": 1224633,
+          "amount": 1062138,
           "date": "2026-06-11T16:20:00Z",
           "actionable": true,
           "metadata": {
@@ -351,23 +651,123 @@
       "catalog": [
         {
           "id": "4-c1",
-          "title": "Neema Zuhura Hit 1",
+          "title": "Neema ya Mungu",
           "artist": "Neema Zuhura",
-          "releaseDate": "2025-04-12",
-          "isrc": "KE-A1Z-25-4001",
-          "streams": 10092336,
-          "revenue": 6196670,
-          "split": 50
+          "releaseDate": "2023-03-26",
+          "isrc": "KE-A1Z-23-4001",
+          "streams": 1332670,
+          "revenue": 866235,
+          "split": 100
         },
         {
           "id": "4-c2",
-          "title": "Neema Zuhura Hit 2",
+          "title": "Zuhura",
           "artist": "Neema Zuhura",
-          "releaseDate": "2026-05-20",
-          "isrc": "KE-A1Z-26-4002",
-          "streams": 522312,
-          "revenue": 72923,
+          "releaseDate": "2025-02-27",
+          "isrc": "KE-A1Z-25-4002",
+          "streams": 2424657,
+          "revenue": 1503287,
+          "split": 75
+        },
+        {
+          "id": "4-c3",
+          "title": "Sauti ya Moyo",
+          "artist": "Neema Zuhura",
+          "releaseDate": "2022-07-03",
+          "isrc": "KE-A1Z-22-4003",
+          "streams": 12141246,
+          "revenue": 7406160,
+          "split": 75
+        },
+        {
+          "id": "4-c4",
+          "title": "Kipepeo wa Dhahabu",
+          "artist": "Neema Zuhura",
+          "releaseDate": "2023-09-17",
+          "isrc": "KE-A1Z-23-4004",
+          "streams": 14325729,
+          "revenue": 7306121,
+          "split": 75
+        },
+        {
+          "id": "4-c5",
+          "title": "Ahadi ya Kweli",
+          "artist": "Neema Zuhura",
+          "releaseDate": "2023-03-26",
+          "isrc": "KE-A1Z-23-4005",
+          "streams": 5762577,
+          "revenue": 2938914,
+          "split": 50
+        },
+        {
+          "id": "4-c6",
+          "title": "Macho Yako",
+          "artist": "Neema Zuhura",
+          "releaseDate": "2026-04-09",
+          "isrc": "KE-A1Z-26-4006",
+          "streams": 14338328,
+          "revenue": 6308864,
+          "split": 75
+        },
+        {
+          "id": "4-c7",
+          "title": "Subira Huvuta Heri",
+          "artist": "Neema Zuhura",
+          "releaseDate": "2022-05-23",
+          "isrc": "KE-A1Z-22-4007",
+          "streams": 4822883,
+          "revenue": 1688009,
           "split": 100
+        },
+        {
+          "id": "4-c8",
+          "title": "Bahari ya Mapenzi",
+          "artist": "Neema Zuhura",
+          "releaseDate": "2024-12-21",
+          "isrc": "KE-A1Z-24-4008",
+          "streams": 12098240,
+          "revenue": 5686172,
+          "split": 50
+        },
+        {
+          "id": "4-c9",
+          "title": "Nuru ya Mchana",
+          "artist": "Neema Zuhura",
+          "releaseDate": "2026-10-13",
+          "isrc": "KE-A1Z-26-4009",
+          "streams": 14614462,
+          "revenue": 8037954,
+          "split": 100
+        },
+        {
+          "id": "4-c10",
+          "title": "Matumaini",
+          "artist": "Neema Zuhura",
+          "releaseDate": "2023-09-06",
+          "isrc": "KE-A1Z-23-4010",
+          "streams": 12677667,
+          "revenue": 4437183,
+          "split": 50
+        },
+        {
+          "id": "4-c11",
+          "title": "Amani na Upendo",
+          "artist": "Neema Zuhura",
+          "releaseDate": "2022-03-22",
+          "isrc": "KE-A1Z-22-4011",
+          "streams": 10526801,
+          "revenue": 5895008,
+          "split": 100
+        },
+        {
+          "id": "4-c12",
+          "title": "Funguo ya Moyo",
+          "artist": "Neema Zuhura",
+          "releaseDate": "2025-10-09",
+          "isrc": "KE-A1Z-25-4012",
+          "streams": 8606295,
+          "revenue": 4991651,
+          "split": 75
         }
       ],
       "settings": {
@@ -392,12 +792,12 @@
       "id": "5",
       "name": "Kipepeo Project",
       "financials": {
-        "availableBalance": 7296481,
-        "totalRevenueYTD": 15560727,
-        "spotifyRevenue": 6224290,
-        "youtubeRevenue": 4668218,
+        "availableBalance": 2494950,
+        "totalRevenueYTD": 12063723,
+        "spotifyRevenue": 4825489,
+        "youtubeRevenue": 3619116,
         "lastPayment": {
-          "amount": 2829041,
+          "amount": 2146231,
           "date": "2026-06-01"
         }
       },
@@ -409,7 +809,7 @@
           "severity": "success",
           "title": "Boomplay Mechanical Royalties",
           "description": "Processed Q1 mechanical royalties for Kipepeo Project from Boomplay.",
-          "amount": 683194,
+          "amount": 263659,
           "date": "2026-06-14T10:30:00Z",
           "actionable": false,
           "metadata": {
@@ -437,7 +837,7 @@
           "severity": "warning",
           "title": "Action Required: License Approval",
           "description": "Final terms for a sync placement need admin sign-off.",
-          "amount": 1457940,
+          "amount": 1677232,
           "date": "2026-06-11T16:20:00Z",
           "actionable": true,
           "metadata": {
@@ -448,23 +848,123 @@
       "catalog": [
         {
           "id": "5-c1",
-          "title": "Kipepeo Project Hit 1",
+          "title": "Kipepeo",
           "artist": "Kipepeo Project",
-          "releaseDate": "2025-04-12",
-          "isrc": "KE-A1Z-25-5001",
-          "streams": 10974605,
-          "revenue": 5686264,
-          "split": 50
+          "releaseDate": "2026-10-27",
+          "isrc": "KE-A1Z-26-5001",
+          "streams": 2930706,
+          "revenue": 1113668,
+          "split": 75
         },
         {
           "id": "5-c2",
-          "title": "Kipepeo Project Hit 2",
+          "title": "Sauti Tamu",
           "artist": "Kipepeo Project",
-          "releaseDate": "2026-05-20",
-          "isrc": "KE-A1Z-26-5002",
-          "streams": 551767,
-          "revenue": 171191,
+          "releaseDate": "2024-11-04",
+          "isrc": "KE-A1Z-24-5002",
+          "streams": 2392557,
+          "revenue": 1555162,
           "split": 100
+        },
+        {
+          "id": "5-c3",
+          "title": "Mti wa Matunda",
+          "artist": "Kipepeo Project",
+          "releaseDate": "2026-10-23",
+          "isrc": "KE-A1Z-26-5003",
+          "streams": 5376603,
+          "revenue": 2849599,
+          "split": 50
+        },
+        {
+          "id": "5-c4",
+          "title": "Njia ya Maisha",
+          "artist": "Kipepeo Project",
+          "releaseDate": "2022-03-25",
+          "isrc": "KE-A1Z-22-5004",
+          "streams": 9784547,
+          "revenue": 5772882,
+          "split": 50
+        },
+        {
+          "id": "5-c5",
+          "title": "Malkia wa Amani",
+          "artist": "Kipepeo Project",
+          "releaseDate": "2023-11-08",
+          "isrc": "KE-A1Z-23-5005",
+          "streams": 13822283,
+          "revenue": 7602255,
+          "split": 75
+        },
+        {
+          "id": "5-c6",
+          "title": "Rhythm ya Rusinga",
+          "artist": "Kipepeo Project",
+          "releaseDate": "2023-11-21",
+          "isrc": "KE-A1Z-23-5006",
+          "streams": 7971275,
+          "revenue": 5181328,
+          "split": 100
+        },
+        {
+          "id": "5-c7",
+          "title": "Ziwa Victoria",
+          "artist": "Kipepeo Project",
+          "releaseDate": "2024-02-10",
+          "isrc": "KE-A1Z-24-5007",
+          "streams": 5705004,
+          "revenue": 2681351,
+          "split": 50
+        },
+        {
+          "id": "5-c8",
+          "title": "Kikwetu",
+          "artist": "Kipepeo Project",
+          "releaseDate": "2023-03-17",
+          "isrc": "KE-A1Z-23-5008",
+          "streams": 11090728,
+          "revenue": 4769013,
+          "split": 75
+        },
+        {
+          "id": "5-c9",
+          "title": "Harambee",
+          "artist": "Kipepeo Project",
+          "releaseDate": "2024-11-25",
+          "isrc": "KE-A1Z-24-5009",
+          "streams": 646455,
+          "revenue": 420195,
+          "split": 75
+        },
+        {
+          "id": "5-c10",
+          "title": "Safarini",
+          "artist": "Kipepeo Project",
+          "releaseDate": "2025-04-08",
+          "isrc": "KE-A1Z-25-5010",
+          "streams": 8842693,
+          "revenue": 5659323,
+          "split": 50
+        },
+        {
+          "id": "5-c11",
+          "title": "Ndoto za Usiku",
+          "artist": "Kipepeo Project",
+          "releaseDate": "2025-04-01",
+          "isrc": "KE-A1Z-25-5011",
+          "streams": 14886008,
+          "revenue": 7889584,
+          "split": 100
+        },
+        {
+          "id": "5-c12",
+          "title": "Mwamba wa Imara",
+          "artist": "Kipepeo Project",
+          "releaseDate": "2025-01-26",
+          "isrc": "KE-A1Z-25-5012",
+          "streams": 14492049,
+          "revenue": 5362058,
+          "split": 75
         }
       ],
       "settings": {

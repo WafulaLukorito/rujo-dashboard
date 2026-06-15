@@ -22,7 +22,8 @@ export default function CatalogPage() {
   useEffect(() => {
     async function fetchCatalog() {
       try {
-        const res = await fetch('/api/catalog');
+        const randomArtistId = Math.floor(Math.random() * 5) + 1;
+        const res = await fetch(`/api/catalog?artistId=${randomArtistId}`);
         const data = await res.json();
         setCatalog(data);
       } catch (error) {
@@ -55,7 +56,7 @@ export default function CatalogPage() {
       <header className="flex flex-col md:flex-row md:items-end justify-between gap-4">
         <div>
           <h1 className="text-4xl font-extrabold tracking-tight text-white mb-2">Song Catalog</h1>
-          <p className="text-gray-400 text-lg">Manage and analyze your published works.</p>
+          <p className="text-gray-400 text-lg">Manage and analyze published works for <span className="text-indigo-400 font-bold">{catalog[0]?.artist || 'Artist'}</span>.</p>
         </div>
         <button className="flex items-center space-x-2 bg-indigo-500 hover:bg-indigo-600 text-white px-5 py-2.5 rounded-xl font-semibold transition-colors shadow-lg shadow-indigo-500/20">
           <ArrowDownToLine className="w-5 h-5" />

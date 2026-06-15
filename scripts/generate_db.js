@@ -48,10 +48,57 @@ names.forEach((name, i) => {
         "metadata": { "licenseType": "All Media" }
       }
     ],
-    catalog: [
-      { "id": `${id}-c1`, "title": `${name} Hit 1`, "artist": name, "releaseDate": "2025-04-12", "isrc": `KE-A1Z-25-${id}001`, "streams": random(5000000, 20000000), "revenue": random(3000000, 8000000), "split": 50 },
-      { "id": `${id}-c2`, "title": `${name} Hit 2`, "artist": name, "releaseDate": "2026-05-20", "isrc": `KE-A1Z-26-${id}002`, "streams": random(100000, 1000000), "revenue": random(50000, 300000), "split": 100 }
-    ],
+    catalog: (() => {
+      const artistTracks = {
+        "Bantu Collective": [
+          "Sema Nami", "Kesho Kutwa", "Machozi ya Furaha", "Upendo wa Dhati", 
+          "Mwangaza", "Safari Ndefu", "Nyumbani", "Tujengane", 
+          "Dunia Duara", "Upepo wa Pwani", "Sherehe", "Wimbi la Bahari"
+        ],
+        "Nyota Groove": [
+          "Muziki Tamu", "Nipe Nafasi", "Ladha ya Mapenzi", "Chakacha", 
+          "Jasho na Damu", "Mapambano", "Kipepeo Rangi", "Ngoma ya Usiku", 
+          "Tabasamu Yako", "Cheza Kidogo", "Asali na Nyuki", "Nyota ya Alfajiri"
+        ],
+        "Dhahabu Vibes": [
+          "Dhahabu", "Pesa Mkononi", "Kazi na Bati", "Vibe la Mtaa", 
+          "Sura Yako", "Mvua ya Baraka", "Nishike Mkono", "Kiu ya Maji", 
+          "Ukweli Mtupu", "Moto na Maji", "Maisha Marefu", "Zamani Sana"
+        ],
+        "Neema Zuhura": [
+          "Neema ya Mungu", "Zuhura", "Sauti ya Moyo", "Kipepeo wa Dhahabu", 
+          "Ahadi ya Kweli", "Macho Yako", "Subira Huvuta Heri", "Bahari ya Mapenzi", 
+          "Nuru ya Mchana", "Matumaini", "Amani na Upendo", "Funguo ya Moyo"
+        ],
+        "Kipepeo Project": [
+          "Kipepeo", "Sauti Tamu", "Mti wa Matunda", "Njia ya Maisha", 
+          "Malkia wa Amani", "Rhythm ya Rusinga", "Ziwa Victoria", "Kikwetu", 
+          "Harambee", "Safarini", "Ndoto za Usiku", "Mwamba wa Imara"
+        ]
+      };
+      
+      const tracks = artistTracks[name] || [];
+      return tracks.map((title, idx) => {
+        const trackId = idx + 1;
+        const year = random(2022, 2026);
+        const yearShort = year.toString().slice(-2);
+        const streams = random(200000, 15000000);
+        // Revenue typically ~0.35 to 0.65 KSh per stream
+        const revenue = Math.floor(streams * (random(35, 65) / 100));
+        const split = [50, 75, 100][random(0, 2)];
+        
+        return {
+          id: `${id}-c${trackId}`,
+          title,
+          artist: name,
+          releaseDate: `${year}-${String(random(1, 12)).padStart(2, '0')}-${String(random(1, 28)).padStart(2, '0')}`,
+          isrc: `KE-A1Z-${yearShort}-${id}${String(trackId).padStart(3, '0')}`,
+          streams,
+          revenue,
+          split
+        };
+      });
+    })(),
     settings: {
       profile: {
         email: `management@${name.replace(' ', '').toLowerCase()}.com`,
