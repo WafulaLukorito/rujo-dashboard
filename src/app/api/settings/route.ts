@@ -7,5 +7,8 @@ export async function GET(request: Request) {
   
   const artist = mockDb.artists.find(a => a.id === artistId) || mockDb.artists[0];
   
-  return NextResponse.json(artist.catalog);
+  return NextResponse.json({
+    artistName: artist.name,
+    ...artist.settings
+  });
 }

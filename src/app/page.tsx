@@ -1,151 +1,113 @@
 'use client';
 
-import { useEffect, useState } from 'react';
-import { TrendingUp, DollarSign, ArrowUpRight, Clock, CheckCircle2, ListMusic } from 'lucide-react';
+import Image from 'next/image';
+import { useRouter } from 'next/navigation';
+import { Mail, Lock, LogIn, Globe, Users, Music } from 'lucide-react';
 
-interface Financials {
-  availableBalance: number;
-  totalRevenueYTD: number;
-  lastPayment: { amount: number; date: string };
-}
+export default function LoginPage() {
+  const router = useRouter();
 
-interface Activity {
-  id: string;
-  type: string;
-  title: string;
-  description: string;
-  amount?: number;
-  date: string;
-}
-
-export default function Dashboard() {
-  const [financials, setFinancials] = useState<Financials | null>(null);
-  const [activity, setActivity] = useState<Activity[]>([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    async function loadData() {
-      try {
-        const [finRes, actRes] = await Promise.all([
-          fetch('/api/financials'),
-          fetch('/api/activity')
-        ]);
-        const finData = await finRes.json();
-        const actData = await actRes.json();
-        setFinancials(finData);
-        setActivity(actData);
-      } catch (error) {
-        console.error('Failed to load data:', error);
-      } finally {
-        setLoading(false);
-      }
-    }
-    loadData();
-  }, []);
-
-  if (loading) {
-    return (
-      <div className="flex items-center justify-center h-full min-h-[60vh]">
-        <div className="relative w-16 h-16">
-          <div className="absolute inset-0 rounded-full border-t-2 border-indigo-500 animate-spin"></div>
-          <div className="absolute inset-2 rounded-full border-t-2 border-purple-500 animate-spin" style={{ animationDirection: 'reverse', animationDuration: '0.8s' }}></div>
-        </div>
-      </div>
-    );
-  }
+  const handleLogin = (e?: React.FormEvent) => {
+    if (e) e.preventDefault();
+    router.push('/dashboard');
+  };
 
   return (
-    <div className="space-y-10 animate-in fade-in duration-700">
-      <header>
-        <h1 className="text-4xl font-extrabold tracking-tight text-white mb-2">Welcome back, The Synthetics</h1>
-        <p className="text-gray-400 text-lg">Here's a quick overview of your publishing business today.</p>
-      </header>
-
-      {/* Financials Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div className="bg-[#1f2937]/30 border border-[#374151]/40 backdrop-blur-md rounded-3xl p-8 shadow-2xl relative overflow-hidden group hover:bg-[#1f2937]/50 transition-all duration-300">
-          <div className="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 group-hover:scale-110 transition-all duration-500">
-            <DollarSign className="w-32 h-32 text-green-400" />
-          </div>
-          <p className="text-gray-400 font-medium mb-2 uppercase tracking-wider text-sm">Available Balance</p>
-          <h2 className="text-5xl font-black text-white mb-4 tracking-tight">
-            ${financials?.availableBalance.toLocaleString(undefined, { minimumFractionDigits: 2 })}
-          </h2>
-          <div className="flex items-center text-sm text-green-400 font-semibold bg-green-400/10 w-fit px-3 py-1.5 rounded-full border border-green-400/20">
-            <ArrowUpRight className="w-4 h-4 mr-1.5" />
-            <span>Ready to withdraw</span>
-          </div>
-        </div>
-
-        <div className="bg-[#1f2937]/30 border border-[#374151]/40 backdrop-blur-md rounded-3xl p-8 shadow-2xl relative overflow-hidden group hover:bg-[#1f2937]/50 transition-all duration-300">
-          <div className="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 group-hover:scale-110 transition-all duration-500">
-            <TrendingUp className="w-32 h-32 text-indigo-400" />
-          </div>
-          <p className="text-gray-400 font-medium mb-2 uppercase tracking-wider text-sm">Total Revenue YTD</p>
-          <h2 className="text-5xl font-black text-white mb-4 tracking-tight">
-            ${financials?.totalRevenueYTD.toLocaleString(undefined, { minimumFractionDigits: 2 })}
-          </h2>
-          <div className="flex items-center text-sm text-indigo-400 font-semibold bg-indigo-400/10 w-fit px-3 py-1.5 rounded-full border border-indigo-400/20">
-            <ArrowUpRight className="w-4 h-4 mr-1.5" />
-            <span>+12.5% vs last year</span>
-          </div>
-        </div>
-
-        <div className="bg-[#1f2937]/30 border border-[#374151]/40 backdrop-blur-md rounded-3xl p-8 shadow-2xl relative overflow-hidden group hover:bg-[#1f2937]/50 transition-all duration-300">
-          <div className="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 group-hover:scale-110 transition-all duration-500">
-            <CheckCircle2 className="w-32 h-32 text-purple-400" />
-          </div>
-          <p className="text-gray-400 font-medium mb-2 uppercase tracking-wider text-sm">Last Payment</p>
-          <h2 className="text-5xl font-black text-white mb-4 tracking-tight">
-            ${financials?.lastPayment.amount.toLocaleString(undefined, { minimumFractionDigits: 2 })}
-          </h2>
-          <div className="flex items-center text-sm text-purple-400 font-semibold bg-purple-400/10 w-fit px-3 py-1.5 rounded-full border border-purple-400/20">
-            <Clock className="w-4 h-4 mr-1.5" />
-            <span>{new Date(financials?.lastPayment.date || '').toLocaleDateString(undefined, { month: 'long', day: 'numeric', year: 'numeric' })}</span>
-          </div>
-        </div>
+    <div className="min-h-screen flex items-center justify-center bg-[#080b12] text-white p-4">
+      {/* Background gradients */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute -top-1/2 -left-1/2 w-full h-full bg-indigo-500/10 blur-[120px] rounded-full"></div>
+        <div className="absolute top-1/2 -right-1/2 w-full h-full bg-purple-500/10 blur-[120px] rounded-full"></div>
       </div>
 
-      {/* Recent Activity */}
-      <div className="pt-4">
-        <div className="flex items-center justify-between mb-8">
-          <h3 className="text-2xl font-bold text-white tracking-tight">Recent Activity</h3>
-          <button className="text-indigo-400 hover:text-indigo-300 text-sm font-semibold transition-colors px-4 py-2 rounded-xl hover:bg-indigo-500/10">
-            View all activity
-          </button>
-        </div>
-        
-        <div className="bg-[#1f2937]/30 border border-[#374151]/40 backdrop-blur-md rounded-3xl overflow-hidden shadow-2xl">
-          <div className="divide-y divide-[#374151]/30">
-            {activity.map((item, index) => (
-              <div key={item.id} className="p-6 hover:bg-[#374151]/30 transition-all duration-300 flex items-center justify-between group">
-                <div className="flex items-center space-x-5">
-                  <div className={`p-4 rounded-2xl flex-shrink-0 transition-transform duration-300 group-hover:scale-110 shadow-lg ${
-                    item.type === 'royalty' ? 'bg-gradient-to-br from-green-500/20 to-emerald-500/10 text-green-400 border border-green-500/20' :
-                    item.type === 'sync' ? 'bg-gradient-to-br from-indigo-500/20 to-blue-500/10 text-indigo-400 border border-indigo-500/20' :
-                    'bg-gradient-to-br from-purple-500/20 to-pink-500/10 text-purple-400 border border-purple-500/20'
-                  }`}>
-                    {item.type === 'royalty' ? <DollarSign className="w-6 h-6" /> :
-                     item.type === 'sync' ? <TrendingUp className="w-6 h-6" /> :
-                     <ListMusic className="w-6 h-6" />}
-                  </div>
-                  <div>
-                    <h4 className="text-white text-lg font-bold group-hover:text-indigo-300 transition-colors">{item.title}</h4>
-                    <p className="text-gray-400 text-sm mt-1">{item.description}</p>
-                  </div>
+      <div className="w-full max-w-md z-10">
+        <div className="bg-[#1f2937]/30 border border-[#374151]/40 backdrop-blur-xl rounded-3xl p-8 shadow-2xl relative">
+          
+          <div className="flex flex-col items-center mb-8">
+            <div className="relative w-16 h-16 mb-4">
+              <Image src="/rujo-logo.png" alt="Rujo Music Group" fill sizes="64px" className="object-contain" />
+            </div>
+            <h1 className="text-2xl font-extrabold tracking-tight text-white">Welcome to Rujo Music</h1>
+            <p className="text-gray-400 text-sm mt-1">Sign in to your publisher dashboard</p>
+          </div>
+
+          <form onSubmit={handleLogin} className="space-y-5 mb-6">
+            <div>
+              <label className="block text-sm font-medium text-gray-300 mb-2">Email Address</label>
+              <div className="relative">
+                <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                  <Mail className="h-5 w-5 text-gray-500" />
                 </div>
-                <div className="text-right">
-                  {item.amount && (
-                    <p className="text-white font-black text-xl mb-1">
-                      +${item.amount.toLocaleString(undefined, { minimumFractionDigits: 2 })}
-                    </p>
-                  )}
-                  <p className="text-gray-500 text-sm font-medium">
-                    {new Date(item.date).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' })}
-                  </p>
-                </div>
+                <input 
+                  type="email" 
+                  placeholder="name@rujomusic.com"
+                  className="w-full bg-[#111827]/60 border border-[#374151]/60 rounded-xl pl-11 pr-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 transition-all hover:bg-[#111827]/80"
+                  required
+                />
               </div>
-            ))}
+            </div>
+
+            <div>
+              <div className="flex items-center justify-between mb-2">
+                <label className="block text-sm font-medium text-gray-300">Password</label>
+                <a href="#" className="text-xs text-indigo-400 hover:text-indigo-300 font-semibold transition-colors">Forgot password?</a>
+              </div>
+              <div className="relative">
+                <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                  <Lock className="h-5 w-5 text-gray-500" />
+                </div>
+                <input 
+                  type="password" 
+                  placeholder="••••••••"
+                  className="w-full bg-[#111827]/60 border border-[#374151]/60 rounded-xl pl-11 pr-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 transition-all hover:bg-[#111827]/80"
+                  required
+                />
+              </div>
+            </div>
+
+            <button 
+              type="submit"
+              className="w-full flex items-center justify-center space-x-2 py-3.5 bg-indigo-500 hover:bg-indigo-600 text-white font-bold rounded-xl transition-all shadow-lg shadow-indigo-500/25 mt-6"
+            >
+              <LogIn className="w-5 h-5" />
+              <span>Log in to Dashboard</span>
+            </button>
+          </form>
+
+          <div className="relative my-8">
+            <div className="absolute inset-0 flex items-center">
+              <div className="w-full border-t border-[#374151]/50"></div>
+            </div>
+            <div className="relative flex justify-center text-sm">
+              <span className="px-4 bg-[#141b25] text-gray-500 font-medium rounded-full">Or continue with</span>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 gap-3">
+            <button 
+              type="button"
+              onClick={() => handleLogin()}
+              className="w-full flex items-center justify-center space-x-3 py-3 bg-[#111827]/50 hover:bg-[#374151]/50 border border-[#374151]/50 text-white font-medium rounded-xl transition-all"
+            >
+              <Globe className="w-5 h-5 text-blue-400" />
+              <span>Log in with Google</span>
+            </button>
+            <button 
+              type="button"
+              onClick={() => handleLogin()}
+              className="w-full flex items-center justify-center space-x-3 py-3 bg-[#111827]/50 hover:bg-[#374151]/50 border border-[#374151]/50 text-white font-medium rounded-xl transition-all"
+            >
+              <Music className="w-5 h-5 text-[#1DB954]" />
+              <span>Log in with Spotify</span>
+            </button>
+            <button 
+              type="button"
+              onClick={() => handleLogin()}
+              className="w-full flex items-center justify-center space-x-3 py-3 bg-[#111827]/50 hover:bg-[#374151]/50 border border-[#374151]/50 text-white font-medium rounded-xl transition-all"
+            >
+              <Users className="w-5 h-5 text-blue-500" />
+              <span>Log in with Facebook</span>
+            </button>
           </div>
         </div>
       </div>

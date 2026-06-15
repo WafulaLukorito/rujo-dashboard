@@ -1,64 +1,489 @@
 {
-  "financials": {
-    "availableBalance": 45280.50,
-    "totalRevenueYTD": 128450.75,
-    "lastPayment": {
-      "amount": 12500.00,
-      "date": "2026-06-01"
-    }
-  },
-  "activity": [
+  "artists": [
     {
       "id": "1",
-      "type": "royalty",
-      "title": "Q1 2026 Streaming Royalties",
-      "description": "Received streaming royalties from Spotify and Apple Music.",
-      "amount": 4200.50,
-      "date": "2026-06-14T10:30:00Z"
+      "name": "Bantu Collective",
+      "financials": {
+        "availableBalance": 9970627,
+        "totalRevenueYTD": 21038316,
+        "spotifyRevenue": 8415326,
+        "youtubeRevenue": 6311494,
+        "lastPayment": {
+          "amount": 1664068,
+          "date": "2026-06-01"
+        }
+      },
+      "activity": [
+        {
+          "id": "1-1",
+          "category": "financial",
+          "subType": "royalty_drop",
+          "severity": "success",
+          "title": "Boomplay Mechanical Royalties",
+          "description": "Processed Q1 mechanical royalties for Bantu Collective from Boomplay.",
+          "amount": 321993,
+          "date": "2026-06-14T10:30:00Z",
+          "actionable": false,
+          "metadata": {
+            "source": "Boomplay",
+            "territory": "East Africa"
+          }
+        },
+        {
+          "id": "1-2",
+          "category": "financial",
+          "subType": "streaming_anomaly",
+          "severity": "urgent",
+          "title": "Streaming Velocity Spike",
+          "description": "Detected a 400% increase in streaming velocity on Spotify Kenya.",
+          "date": "2026-06-14T08:15:00Z",
+          "actionable": true,
+          "metadata": {
+            "platform": "Spotify"
+          }
+        },
+        {
+          "id": "1-3",
+          "category": "sync",
+          "subType": "contract_approval",
+          "severity": "warning",
+          "title": "Action Required: License Approval",
+          "description": "Final terms for a sync placement need admin sign-off.",
+          "amount": 2991363,
+          "date": "2026-06-11T16:20:00Z",
+          "actionable": true,
+          "metadata": {
+            "licenseType": "All Media"
+          }
+        }
+      ],
+      "catalog": [
+        {
+          "id": "1-c1",
+          "title": "Bantu Collective Hit 1",
+          "artist": "Bantu Collective",
+          "releaseDate": "2025-04-12",
+          "isrc": "KE-A1Z-25-1001",
+          "streams": 11821161,
+          "revenue": 3963646,
+          "split": 50
+        },
+        {
+          "id": "1-c2",
+          "title": "Bantu Collective Hit 2",
+          "artist": "Bantu Collective",
+          "releaseDate": "2026-05-20",
+          "isrc": "KE-A1Z-26-1002",
+          "streams": 764836,
+          "revenue": 159413,
+          "split": 100
+        }
+      ],
+      "settings": {
+        "profile": {
+          "email": "management@bantucollective.com",
+          "phone": "+254 700 000000",
+          "notifications": true
+        },
+        "payout": {
+          "method": "M-Pesa",
+          "accountNumber": "254700000000",
+          "status": "Verified"
+        },
+        "platforms": {
+          "spotify": "Connected",
+          "youtube": "Connected",
+          "appleMusic": "Disconnected"
+        }
+      }
     },
     {
       "id": "2",
-      "type": "sync",
-      "title": "Sync Placement: 'Midnight Drive'",
-      "description": "Placed in Netflix series 'Neon Nights' Season 2.",
-      "amount": 15000.00,
-      "date": "2026-06-10T14:15:00Z"
+      "name": "Nyota Groove",
+      "financials": {
+        "availableBalance": 7179928,
+        "totalRevenueYTD": 15149873,
+        "spotifyRevenue": 6059949,
+        "youtubeRevenue": 4544961,
+        "lastPayment": {
+          "amount": 2432834,
+          "date": "2026-06-01"
+        }
+      },
+      "activity": [
+        {
+          "id": "2-1",
+          "category": "financial",
+          "subType": "royalty_drop",
+          "severity": "success",
+          "title": "Boomplay Mechanical Royalties",
+          "description": "Processed Q1 mechanical royalties for Nyota Groove from Boomplay.",
+          "amount": 691531,
+          "date": "2026-06-14T10:30:00Z",
+          "actionable": false,
+          "metadata": {
+            "source": "Boomplay",
+            "territory": "East Africa"
+          }
+        },
+        {
+          "id": "2-2",
+          "category": "financial",
+          "subType": "streaming_anomaly",
+          "severity": "urgent",
+          "title": "Streaming Velocity Spike",
+          "description": "Detected a 400% increase in streaming velocity on Spotify Kenya.",
+          "date": "2026-06-14T08:15:00Z",
+          "actionable": true,
+          "metadata": {
+            "platform": "Spotify"
+          }
+        },
+        {
+          "id": "2-3",
+          "category": "sync",
+          "subType": "contract_approval",
+          "severity": "warning",
+          "title": "Action Required: License Approval",
+          "description": "Final terms for a sync placement need admin sign-off.",
+          "amount": 1261979,
+          "date": "2026-06-11T16:20:00Z",
+          "actionable": true,
+          "metadata": {
+            "licenseType": "All Media"
+          }
+        }
+      ],
+      "catalog": [
+        {
+          "id": "2-c1",
+          "title": "Nyota Groove Hit 1",
+          "artist": "Nyota Groove",
+          "releaseDate": "2025-04-12",
+          "isrc": "KE-A1Z-25-2001",
+          "streams": 17853270,
+          "revenue": 6416506,
+          "split": 50
+        },
+        {
+          "id": "2-c2",
+          "title": "Nyota Groove Hit 2",
+          "artist": "Nyota Groove",
+          "releaseDate": "2026-05-20",
+          "isrc": "KE-A1Z-26-2002",
+          "streams": 259731,
+          "revenue": 226942,
+          "split": 100
+        }
+      ],
+      "settings": {
+        "profile": {
+          "email": "management@nyotagroove.com",
+          "phone": "+254 700 000000",
+          "notifications": true
+        },
+        "payout": {
+          "method": "M-Pesa",
+          "accountNumber": "254700000000",
+          "status": "Verified"
+        },
+        "platforms": {
+          "spotify": "Connected",
+          "youtube": "Connected",
+          "appleMusic": "Disconnected"
+        }
+      }
     },
     {
       "id": "3",
-      "type": "catalog",
-      "title": "New Song Registered",
-      "description": "Successfully registered 'Summer Breeze' with PRO.",
-      "date": "2026-06-05T09:00:00Z"
-    }
-  ],
-  "catalog": [
-    {
-      "id": "c1",
-      "title": "Midnight Drive",
-      "artist": "The Synthetics",
-      "releaseDate": "2025-04-12",
-      "isrc": "US-S1Z-25-00001",
-      "streams": 15000000,
-      "revenue": 52000.00
+      "name": "Dhahabu Vibes",
+      "financials": {
+        "availableBalance": 9716666,
+        "totalRevenueYTD": 25306539,
+        "spotifyRevenue": 10122615,
+        "youtubeRevenue": 7591961,
+        "lastPayment": {
+          "amount": 2408221,
+          "date": "2026-06-01"
+        }
+      },
+      "activity": [
+        {
+          "id": "3-1",
+          "category": "financial",
+          "subType": "royalty_drop",
+          "severity": "success",
+          "title": "Boomplay Mechanical Royalties",
+          "description": "Processed Q1 mechanical royalties for Dhahabu Vibes from Boomplay.",
+          "amount": 724112,
+          "date": "2026-06-14T10:30:00Z",
+          "actionable": false,
+          "metadata": {
+            "source": "Boomplay",
+            "territory": "East Africa"
+          }
+        },
+        {
+          "id": "3-2",
+          "category": "financial",
+          "subType": "streaming_anomaly",
+          "severity": "urgent",
+          "title": "Streaming Velocity Spike",
+          "description": "Detected a 400% increase in streaming velocity on Spotify Kenya.",
+          "date": "2026-06-14T08:15:00Z",
+          "actionable": true,
+          "metadata": {
+            "platform": "Spotify"
+          }
+        },
+        {
+          "id": "3-3",
+          "category": "sync",
+          "subType": "contract_approval",
+          "severity": "warning",
+          "title": "Action Required: License Approval",
+          "description": "Final terms for a sync placement need admin sign-off.",
+          "amount": 2358880,
+          "date": "2026-06-11T16:20:00Z",
+          "actionable": true,
+          "metadata": {
+            "licenseType": "All Media"
+          }
+        }
+      ],
+      "catalog": [
+        {
+          "id": "3-c1",
+          "title": "Dhahabu Vibes Hit 1",
+          "artist": "Dhahabu Vibes",
+          "releaseDate": "2025-04-12",
+          "isrc": "KE-A1Z-25-3001",
+          "streams": 6159934,
+          "revenue": 3424528,
+          "split": 50
+        },
+        {
+          "id": "3-c2",
+          "title": "Dhahabu Vibes Hit 2",
+          "artist": "Dhahabu Vibes",
+          "releaseDate": "2026-05-20",
+          "isrc": "KE-A1Z-26-3002",
+          "streams": 187999,
+          "revenue": 87330,
+          "split": 100
+        }
+      ],
+      "settings": {
+        "profile": {
+          "email": "management@dhahabuvibes.com",
+          "phone": "+254 700 000000",
+          "notifications": true
+        },
+        "payout": {
+          "method": "M-Pesa",
+          "accountNumber": "254700000000",
+          "status": "Verified"
+        },
+        "platforms": {
+          "spotify": "Connected",
+          "youtube": "Connected",
+          "appleMusic": "Disconnected"
+        }
+      }
     },
     {
-      "id": "c2",
-      "title": "Summer Breeze",
-      "artist": "The Synthetics",
-      "releaseDate": "2026-05-20",
-      "isrc": "US-S1Z-26-00002",
-      "streams": 250000,
-      "revenue": 850.00
+      "id": "4",
+      "name": "Neema Zuhura",
+      "financials": {
+        "availableBalance": 5056554,
+        "totalRevenueYTD": 13798170,
+        "spotifyRevenue": 5519268,
+        "youtubeRevenue": 4139451,
+        "lastPayment": {
+          "amount": 1984669,
+          "date": "2026-06-01"
+        }
+      },
+      "activity": [
+        {
+          "id": "4-1",
+          "category": "financial",
+          "subType": "royalty_drop",
+          "severity": "success",
+          "title": "Boomplay Mechanical Royalties",
+          "description": "Processed Q1 mechanical royalties for Neema Zuhura from Boomplay.",
+          "amount": 528973,
+          "date": "2026-06-14T10:30:00Z",
+          "actionable": false,
+          "metadata": {
+            "source": "Boomplay",
+            "territory": "East Africa"
+          }
+        },
+        {
+          "id": "4-2",
+          "category": "financial",
+          "subType": "streaming_anomaly",
+          "severity": "urgent",
+          "title": "Streaming Velocity Spike",
+          "description": "Detected a 400% increase in streaming velocity on Spotify Kenya.",
+          "date": "2026-06-14T08:15:00Z",
+          "actionable": true,
+          "metadata": {
+            "platform": "Spotify"
+          }
+        },
+        {
+          "id": "4-3",
+          "category": "sync",
+          "subType": "contract_approval",
+          "severity": "warning",
+          "title": "Action Required: License Approval",
+          "description": "Final terms for a sync placement need admin sign-off.",
+          "amount": 1224633,
+          "date": "2026-06-11T16:20:00Z",
+          "actionable": true,
+          "metadata": {
+            "licenseType": "All Media"
+          }
+        }
+      ],
+      "catalog": [
+        {
+          "id": "4-c1",
+          "title": "Neema Zuhura Hit 1",
+          "artist": "Neema Zuhura",
+          "releaseDate": "2025-04-12",
+          "isrc": "KE-A1Z-25-4001",
+          "streams": 10092336,
+          "revenue": 6196670,
+          "split": 50
+        },
+        {
+          "id": "4-c2",
+          "title": "Neema Zuhura Hit 2",
+          "artist": "Neema Zuhura",
+          "releaseDate": "2026-05-20",
+          "isrc": "KE-A1Z-26-4002",
+          "streams": 522312,
+          "revenue": 72923,
+          "split": 100
+        }
+      ],
+      "settings": {
+        "profile": {
+          "email": "management@neemazuhura.com",
+          "phone": "+254 700 000000",
+          "notifications": true
+        },
+        "payout": {
+          "method": "M-Pesa",
+          "accountNumber": "254700000000",
+          "status": "Verified"
+        },
+        "platforms": {
+          "spotify": "Connected",
+          "youtube": "Connected",
+          "appleMusic": "Disconnected"
+        }
+      }
     },
     {
-      "id": "c3",
-      "title": "Neon Lights",
-      "artist": "The Synthetics",
-      "releaseDate": "2024-11-05",
-      "isrc": "US-S1Z-24-00003",
-      "streams": 32000000,
-      "revenue": 115000.00
+      "id": "5",
+      "name": "Kipepeo Project",
+      "financials": {
+        "availableBalance": 7296481,
+        "totalRevenueYTD": 15560727,
+        "spotifyRevenue": 6224290,
+        "youtubeRevenue": 4668218,
+        "lastPayment": {
+          "amount": 2829041,
+          "date": "2026-06-01"
+        }
+      },
+      "activity": [
+        {
+          "id": "5-1",
+          "category": "financial",
+          "subType": "royalty_drop",
+          "severity": "success",
+          "title": "Boomplay Mechanical Royalties",
+          "description": "Processed Q1 mechanical royalties for Kipepeo Project from Boomplay.",
+          "amount": 683194,
+          "date": "2026-06-14T10:30:00Z",
+          "actionable": false,
+          "metadata": {
+            "source": "Boomplay",
+            "territory": "East Africa"
+          }
+        },
+        {
+          "id": "5-2",
+          "category": "financial",
+          "subType": "streaming_anomaly",
+          "severity": "urgent",
+          "title": "Streaming Velocity Spike",
+          "description": "Detected a 400% increase in streaming velocity on Spotify Kenya.",
+          "date": "2026-06-14T08:15:00Z",
+          "actionable": true,
+          "metadata": {
+            "platform": "Spotify"
+          }
+        },
+        {
+          "id": "5-3",
+          "category": "sync",
+          "subType": "contract_approval",
+          "severity": "warning",
+          "title": "Action Required: License Approval",
+          "description": "Final terms for a sync placement need admin sign-off.",
+          "amount": 1457940,
+          "date": "2026-06-11T16:20:00Z",
+          "actionable": true,
+          "metadata": {
+            "licenseType": "All Media"
+          }
+        }
+      ],
+      "catalog": [
+        {
+          "id": "5-c1",
+          "title": "Kipepeo Project Hit 1",
+          "artist": "Kipepeo Project",
+          "releaseDate": "2025-04-12",
+          "isrc": "KE-A1Z-25-5001",
+          "streams": 10974605,
+          "revenue": 5686264,
+          "split": 50
+        },
+        {
+          "id": "5-c2",
+          "title": "Kipepeo Project Hit 2",
+          "artist": "Kipepeo Project",
+          "releaseDate": "2026-05-20",
+          "isrc": "KE-A1Z-26-5002",
+          "streams": 551767,
+          "revenue": 171191,
+          "split": 100
+        }
+      ],
+      "settings": {
+        "profile": {
+          "email": "management@kipepeoproject.com",
+          "phone": "+254 700 000000",
+          "notifications": true
+        },
+        "payout": {
+          "method": "M-Pesa",
+          "accountNumber": "254700000000",
+          "status": "Verified"
+        },
+        "platforms": {
+          "spotify": "Connected",
+          "youtube": "Connected",
+          "appleMusic": "Disconnected"
+        }
+      }
     }
   ]
 }
