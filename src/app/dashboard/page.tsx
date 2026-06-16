@@ -63,19 +63,19 @@ export default function Dashboard() {
 
   return (
     <div className="space-y-10 animate-in fade-in duration-700">
-      <header>
-        <h1 className="text-4xl font-extrabold tracking-tight text-white mb-2">Welcome back, {financials?.artistName}</h1>
-        <p className="text-gray-400 text-lg">Here's a quick overview of your publishing business today.</p>
+      <header className="space-y-1">
+        <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight text-white">Welcome back, {financials?.artistName}</h1>
+        <p className="text-gray-400 text-base md:text-lg">Here's a quick overview of your publishing business today.</p>
       </header>
 
       {/* Financials Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div className="bg-[#1f2937]/30 border border-[#374151]/40 backdrop-blur-md rounded-3xl p-6 shadow-2xl relative overflow-hidden group hover:bg-[#1f2937]/50 transition-all duration-300">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+        <div className="bg-[#1f2937]/30 border border-[#374151]/40 backdrop-blur-md rounded-3xl p-5 md:p-6 shadow-2xl relative overflow-hidden group hover:bg-[#1f2937]/50 transition-all duration-300">
           <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 group-hover:scale-110 transition-all duration-500">
             <Coins className="w-24 h-24 text-green-400" />
           </div>
           <p className="text-gray-400 font-medium mb-2 uppercase tracking-wider text-xs">Available Balance</p>
-          <h2 className="text-3xl font-black text-white mb-4 tracking-tight">
+          <h2 className="text-2xl md:text-3xl font-black text-white mb-4 tracking-tight">
             KSh {(financials?.availableBalance || 0).toLocaleString(undefined, { minimumFractionDigits: 0 })}
           </h2>
           <div className="flex items-center text-xs text-green-400 font-semibold bg-green-400/10 w-fit px-3 py-1.5 rounded-full border border-green-400/20">
@@ -84,12 +84,12 @@ export default function Dashboard() {
           </div>
         </div>
 
-        <div className="bg-[#1f2937]/30 border border-[#374151]/40 backdrop-blur-md rounded-3xl p-6 shadow-2xl relative overflow-hidden group hover:bg-[#1f2937]/50 transition-all duration-300">
+        <div className="bg-[#1f2937]/30 border border-[#374151]/40 backdrop-blur-md rounded-3xl p-5 md:p-6 shadow-2xl relative overflow-hidden group hover:bg-[#1f2937]/50 transition-all duration-300">
           <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 group-hover:scale-110 transition-all duration-500">
             <TrendingUp className="w-24 h-24 text-indigo-400" />
           </div>
           <p className="text-gray-400 font-medium mb-2 uppercase tracking-wider text-xs">Total Revenue YTD</p>
-          <h2 className="text-3xl font-black text-white mb-4 tracking-tight">
+          <h2 className="text-2xl md:text-3xl font-black text-white mb-4 tracking-tight">
             KSh {(financials?.totalRevenueYTD || 0).toLocaleString(undefined, { minimumFractionDigits: 0 })}
           </h2>
           <div className="flex items-center text-xs text-indigo-400 font-semibold bg-indigo-400/10 w-fit px-3 py-1.5 rounded-full border border-indigo-400/20">
@@ -98,12 +98,12 @@ export default function Dashboard() {
           </div>
         </div>
 
-        <div className="bg-[#1f2937]/30 border border-[#374151]/40 backdrop-blur-md rounded-3xl p-6 shadow-2xl relative overflow-hidden group hover:bg-[#1f2937]/50 transition-all duration-300">
+        <div className="bg-[#1f2937]/30 border border-[#374151]/40 backdrop-blur-md rounded-3xl p-5 md:p-6 shadow-2xl relative overflow-hidden group hover:bg-[#1f2937]/50 transition-all duration-300">
           <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 group-hover:scale-110 transition-all duration-500">
             <PlayCircle className="w-24 h-24 text-[#1DB954]" />
           </div>
           <p className="text-gray-400 font-medium mb-2 uppercase tracking-wider text-xs">Spotify Revenue</p>
-          <h2 className="text-3xl font-black text-white mb-4 tracking-tight">
+          <h2 className="text-2xl md:text-3xl font-black text-white mb-4 tracking-tight">
             KSh {(financials?.spotifyRevenue || 0).toLocaleString(undefined, { minimumFractionDigits: 0 })}
           </h2>
           <div className="flex items-center text-xs text-[#1DB954] font-semibold bg-[#1DB954]/10 w-fit px-3 py-1.5 rounded-full border border-[#1DB954]/20">
@@ -112,12 +112,12 @@ export default function Dashboard() {
           </div>
         </div>
 
-        <div className="bg-[#1f2937]/30 border border-[#374151]/40 backdrop-blur-md rounded-3xl p-6 shadow-2xl relative overflow-hidden group hover:bg-[#1f2937]/50 transition-all duration-300">
+        <div className="bg-[#1f2937]/30 border border-[#374151]/40 backdrop-blur-md rounded-3xl p-5 md:p-6 shadow-2xl relative overflow-hidden group hover:bg-[#1f2937]/50 transition-all duration-300">
           <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 group-hover:scale-110 transition-all duration-500">
             <MonitorPlay className="w-24 h-24 text-[#FF0000]" />
           </div>
           <p className="text-gray-400 font-medium mb-2 uppercase tracking-wider text-xs">YouTube Revenue</p>
-          <h2 className="text-3xl font-black text-white mb-4 tracking-tight">
+          <h2 className="text-2xl md:text-3xl font-black text-white mb-4 tracking-tight">
             KSh {(financials?.youtubeRevenue || 0).toLocaleString(undefined, { minimumFractionDigits: 0 })}
           </h2>
           <div className="flex items-center text-xs text-[#FF0000] font-semibold bg-[#FF0000]/10 w-fit px-3 py-1.5 rounded-full border border-[#FF0000]/20">
@@ -139,29 +139,29 @@ export default function Dashboard() {
         <div className="bg-[#1f2937]/30 border border-[#374151]/40 backdrop-blur-md rounded-3xl overflow-hidden shadow-2xl">
           <div className="divide-y divide-[#374151]/30">
             {activity.map((item) => (
-              <div key={item.id} className="p-6 hover:bg-[#374151]/30 transition-all duration-300 flex items-center justify-between group">
-                <div className="flex items-center space-x-5">
-                  <div className={`p-4 rounded-2xl flex-shrink-0 transition-transform duration-300 group-hover:scale-110 shadow-lg ${
+              <div key={item.id} className="p-4 md:p-6 hover:bg-[#374151]/30 transition-all duration-300 flex flex-col sm:flex-row sm:items-center justify-between gap-4 group">
+                <div className="flex items-start sm:items-center space-x-4 md:space-x-5">
+                  <div className={`p-3 md:p-4 rounded-xl md:rounded-2xl flex-shrink-0 transition-transform duration-300 group-hover:scale-110 shadow-lg ${
                     item.category === 'financial' ? 'bg-gradient-to-br from-green-500/20 to-emerald-500/10 text-green-400 border border-green-500/20' :
                     item.category === 'sync' ? 'bg-gradient-to-br from-indigo-500/20 to-blue-500/10 text-indigo-400 border border-indigo-500/20' :
                     'bg-gradient-to-br from-purple-500/20 to-pink-500/10 text-purple-400 border border-purple-500/20'
                   }`}>
-                    {item.category === 'financial' ? <Coins className="w-6 h-6" /> :
-                     item.category === 'sync' ? <TrendingUp className="w-6 h-6" /> :
-                     <ListMusic className="w-6 h-6" />}
+                    {item.category === 'financial' ? <Coins className="w-5 h-5 md:w-6 md:h-6" /> :
+                     item.category === 'sync' ? <TrendingUp className="w-5 h-5 md:w-6 md:h-6" /> :
+                     <ListMusic className="w-5 h-5 md:w-6 md:h-6" />}
                   </div>
-                  <div>
-                    <h4 className="text-white text-lg font-bold group-hover:text-indigo-300 transition-colors">{item.title}</h4>
-                    <p className="text-gray-400 text-sm mt-1">{item.description}</p>
+                  <div className="min-w-0">
+                    <h4 className="text-white text-base md:text-lg font-bold group-hover:text-indigo-300 transition-colors truncate">{item.title}</h4>
+                    <p className="text-gray-400 text-xs md:text-sm mt-0.5 md:mt-1 line-clamp-2 md:line-clamp-none">{item.description}</p>
                   </div>
                 </div>
-                <div className="text-right">
+                <div className="text-left sm:text-right pl-12 sm:pl-0">
                   {item.amount && (
-                    <p className="text-white font-black text-xl mb-1">
+                    <p className="text-white font-black text-lg md:text-xl mb-0.5 md:mb-1">
                       +KSh {item.amount.toLocaleString(undefined, { minimumFractionDigits: 2 })}
                     </p>
                   )}
-                  <p className="text-gray-500 text-sm font-medium">
+                  <p className="text-gray-500 text-xs md:text-sm font-medium">
                     {new Date(item.date).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' })}
                   </p>
                 </div>
